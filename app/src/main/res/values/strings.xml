@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WatchFilm</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="main">Main</string>
+    <string name="menu_main">Main</string>
+    <string name="name">Название</string>
+    <string name="year">Год</string>
+    <string name="info">Информация</string>
+</resources>
