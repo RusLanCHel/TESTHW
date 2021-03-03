@@ -1,11 +1,13 @@
 package com.example.test.ui.main
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -29,6 +31,7 @@ class MainFragment : Fragment(), IRVOnItemClick{
         return root
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel= ViewModelProvider(this).get(MainViewModel::class.java)
@@ -36,6 +39,7 @@ class MainFragment : Fragment(), IRVOnItemClick{
         observer = Observer {setupRecyclerView(it)}
         viewModel.getData().observe(viewLifecycleOwner, observer)
     }
+
 
     fun setupRecyclerView(data: ArrayList<Film>){
         val linearLayoutManager =
