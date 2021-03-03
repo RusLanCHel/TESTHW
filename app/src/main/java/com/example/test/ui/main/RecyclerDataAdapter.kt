@@ -25,6 +25,7 @@ class RecyclerDataAdapter(val data: ArrayList<Film>, val onItemClickedCallBack: 
 
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.itemrvlayout, parent, false)
         return ViewHolder(view)

@@ -59,4 +59,5 @@ class MainViewModel(private val recyclerViewDataFilm: MutableLiveData<ArrayList<
     private fun getLines(reader: BufferedReader): String{
         return reader.lines().collect(Collectors.joining("\n"))
     }
+
 }
